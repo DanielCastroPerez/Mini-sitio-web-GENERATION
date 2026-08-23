@@ -60,9 +60,9 @@
     <!--!Fin de Navar-->
 
     <!--!Inicio de Seccion Introduccion-->
-    <h1 class="titulo-p">Fin de semana en CDMX</h1>
-    <div class="container">
-      <section class="Introduccion">
+    <div class="container-fluid">
+      <section class="Introduccion" style="background-color:aqua"> <!-- todo :Aqui poner la imagen de fondompero es aqui o en css ?? y darle mas altura ese si en el css -->
+        <h1 class="titulo-p">Fin de semana en CDMX</h1>
         <h4>Que hacer un fin de semana en CDMX</h4>
         <p>
           Los mejores lugares para visitar en la Ciudad de México incluyen el
@@ -79,12 +79,12 @@
     <div class="card-group">
       <div class="card">
         <img
-          src="..."
+          src="/asset/Chapultepec/castillo.jpg"
           class="card-img-top"
           alt="..."
-        /><!--Todo : Hacerlo carruzel ??? se podra jaja yo creo que si amiko todo se puede-->
+        /><!--Todo : Hacerlo carruzel ??? se podra jaja yo creo que si amiko todo se puede pero ya tenemos la pantalla de mas detalle con carusel jeje-->
         <div class="card-body">
-          <h5 class="card-title">Bosque de Chapultepec</h5>
+          <h5 class="card-title">Castillo de Chapultepec</h5>
           <p class="card-text">
             Imagina un santuario donde la historia imperial y la naturaleza viva
             se fusionan en el corazón de una de las metrópolis más vibrantes del
@@ -98,15 +98,15 @@
               <i class="bi bi-star-fill"></i>
             </div>
           </div>
-          <button type="button" class="btn btn-primary btn-lg">
+          <a href="Detalles-Destinos/Chapultepec.html"><button type="button" class="btn btn-primary btn-lg">
             Ver Detalles
-          </button>
+          </button></a>
           <!--Botone ver detalle-->
         </div>
       </div>
 
       <div class="card">
-        <img src="..." class="card-img-top" alt="..." />
+        <img src="/asset/MuseoAntropología/mueso3.jpg" class="card-img-top" alt="..." />
         <div class="card-body">
           <h5 class="card-title">Museo Nacional de Antropología</h5>
           <p class="card-text">
@@ -123,15 +123,15 @@
               <i class="bi bi-star-fill"></i>
             </div>
           </div>
-          <button type="button" class="btn btn-primary btn-lg">
+          <a href="Detalles-Destinos/modifi"><button type="button" class="btn btn-primary btn-lg">
             Ver Detalles
-          </button>
+          </button></a>
           <!--Botone ver detalle-->
         </div>
       </div>
 
       <div class="card">
-        <img src="..." class="card-img-top" alt="..." />
+        <img src="/asset/BellasArtes/bellas1.jpg" class="card-img-top" alt="..." />
         <div class="card-body">
           <h5 class="card-title">Palacio de Bellas Artes</h5>
           <p class="card-text">
@@ -148,19 +148,19 @@
               <i class="bi bi-star-fill"></i>
             </div>
           </div>
-          <button type="button" class="btn btn-primary btn-lg">
+          <a href="Detalles-Destinos/modifi"><button type="button" class="btn btn-primary btn-lg">
             Ver Detalles
-          </button>
+          </button></a>
           <!--Botone ver detalle-->
         </div>
       </div>
     </div>
 
-    <h1>Te gusta mas la natura ? ve estos lugares</h1>
+    <h1 class="titulo-p">Te gusta mas la natura ? ve estos lugares</h1>
 
     <div class="card-group">
       <div class="card">
-        <img src="..." class="card-img-top" alt="..." />
+        <img src="/asset/Coyoacan/coyo2.jpg" class="card-img-top" alt="..." />
         <div class="card-body">
           <h5 class="card-title">Coyoacán</h5>
           <p class="card-text">
@@ -173,13 +173,13 @@
               <i class="bi bi-star-fill"></i>
             </div>
           </div>
-          <button type="button" class="btn btn-primary btn-lg">
+          <a href="Detalles-Destinos/modifi"><button type="button" class="btn btn-primary btn-lg">
             Ver Detalles
-          </button>
+          </button></a>
         </div>
       </div>
       <div class="card">
-        <img src="..." class="card-img-top" alt="..." />
+        <img src="/asset/Xochimilco/xochi1.jpg" class="card-img-top" alt="..." />
         <div class="card-body">
           <h5 class="card-title">Canales de Xochimilco</h5>
           <p class="card-text">
@@ -192,13 +192,13 @@
               <i class="bi bi-star-fill"></i>
             </div>
           </div>
-          <button type="button" class="btn btn-primary btn-lg">
+          <a href="Detalles-Destinos/modifi"><button type="button" class="btn btn-primary btn-lg">
             Ver Detalles
-          </button>
+          </button></a>
         </div>
       </div>
       <div class="card">
-        <img src="..." class="card-img-top" alt="..." />
+        <img src="/asset/Parque-México/par1.jpg" class="card-img-top" alt="..." />
         <div class="card-body">
           <h5 class="card-title">Parque México</h5>
           <p class="card-text">
@@ -213,9 +213,9 @@
               <i class="bi bi-star-fill"></i>
             </div>
           </div>
-          <button type="button" class="btn btn-primary btn-lg">
+          <a href="Detalles-Destinos/modifi"><button type="button" class="btn btn-primary btn-lg">
             Ver Detalles
-          </button>
+          </button></a>
         </div>
       </div>
     </div>
@@ -223,7 +223,40 @@
 
     <!--!footer-->
     <footer>
-      <p>Derechos de autor</p>
+      <!--SECCIION-->
+      <section class="Secciones">
+        <h1>Secciones</h1>
+        <li>
+          <ul>Inicio</ul>
+          <ul>Destinos</ul>
+          <ul>Eventos</ul>
+          <ul>Gastronimia</ul>
+          <ul>Nosotros</ul>
+        </li>
+      </section>
+      <!--Recursos CDMX-->
+      <section class="Recursos">
+        <h1>Recursos CDMX</h1>
+        <li>
+          <ul>Mapas</ul>
+          <ul>Transporte</ul>
+          <ul>Clima</ul>
+          <ul>Seguridad</ul>
+          <ul>Cultura CDMX</ul>
+        </li>
+      </section>
+      <!--Nuestras redes-->
+      <section class="Redes">
+        <h1>Nuestras redes</h1>
+        <li>
+          <ul><a href=""><i class="bi bi-facebook"></i></a></ul>
+          <ul><a href=""><i class="bi bi-instagram"></i></a></ul>
+          <ul><a href=""><i class="bi bi-youtube"></i></a></ul>
+          <ul>Gastronimia</ul>
+          <ul>Nosotros</ul>
+        </li>
+      </section>
+
     </footer>
 
     <!--!Link de boostrap-->
