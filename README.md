@@ -283,19 +283,22 @@ A continuación explico tres fragmentos de código utilizados en mi proyecto.
 
 ### ¿Qué hace?
 
-> ---
+> Muestra una card con una imagen  y se le agrega estilo gracias a las diferentes clases de boostrap "card-body d-flex flex-column" 
+.card: El contenedor principal de la tarjeta
+.card-body: El contenedor interno que añade el relleno
+.flex-column
 
 ### ¿Por qué lo utilizo?
 
-> ---
+> Para dar diseño a esa card sin utilizar css
 
 ### ¿Lo generó la IA o yo?
 
-> ---
+>Yo logre hacer una estructura basica con buen diseño  y la IA me ayudo a darle mejor fluides estilo a las cards y a mejorar las imagejes
 
 ### ¿Qué modifiqué?
 
-> ---
+> Las clases, las imagnes y los colores del navar asi como su texto
 
 ---
 
@@ -304,24 +307,28 @@ A continuación explico tres fragmentos de código utilizados en mi proyecto.
 ### Código
 
 ```javascript
-// Coloca aquí tu código
+let nombre = prompt("Por favor, ingresa tu nombre:");
+let lugar = prompt("Por favor, ingresa tu lugar de origen:");
+let profesion = prompt("Por favor, ingresa tu profesión:");
+
+alert("Hola " + nombre + ", bienvenido!. " + lugar + " es un lugar muy interesante y tu profesión es " + profesion + " es una profesión muy interesanteS. ¡Gracias por compartirlo con nosotros! disfruta tu estadía en nuestra página web. ");
 ```
 
 ### ¿Qué hace?
 
-> ---
+> Solo le pide al usuario ingresar su nombre donde vide y carrera para mostrarlo en pantalla junto con un mensaje
 
 ### ¿Por qué lo utilizo?
 
-> ---
+> Para darle como una bienvenida 
 
 ### ¿Lo generó la IA o yo?
 
-> ---
+> Yo lo genere
 
 ### ¿Qué modifiqué?
 
-> ---
+> Nada
 
 ---
 
@@ -329,25 +336,33 @@ A continuación explico tres fragmentos de código utilizados en mi proyecto.
 
 ### Código
 
-```html
-<!-- Coloca aquí tu código -->
+```CSS
+.navbar .btn-warning:hover {
+    color: #173f35;
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+.card-img-top {
+    height: 230px;
+    object-fit: cover; 
+}
 ```
 
 ### ¿Qué hace?
 
-> ---
+> le agrega color a los botores warning y a los bordes  y .card-img-top  "object-fit: cover; "  Ajusta la imagen para que se recorte si es necesario y "height: 230px;" solo modifica el alto de la imagen
 
 ### ¿Por qué lo utilizo?
 
-> ---
+> Para darle un buen diseño a las imagenes 
 
 ### ¿Lo generó la IA o yo?
 
-> ---
+>Lo genero la IA
 
 ### ¿Qué modifiqué?
 
-> ---
+> Tamaño de las imagenes
 
 ---
 
@@ -360,10 +375,6 @@ A continuación explico tres fragmentos de código utilizados en mi proyecto.
 - Git
 - GitHub
 - Inteligencia Artificial
-
-### IA utilizada
-
-> ---
 
 ---
 
@@ -411,41 +422,15 @@ mi-recomendador/
 
 ---
 
-# 🤖 Código generado por IA vs. código propio
-
-## ¿Qué generó la IA?
-
-> ---
->
-> ---
-
-## ¿Qué modifiqué o realicé yo?
-
-> ---
->
-> ---
-
-## ¿Qué partes hice completamente por mi cuenta?
-
-> ---
->
-> ---
-
----
-
 # 📖 Aprendizaje
 
 ### ¿Qué concepto nuevo comprendí gracias a la IA?
 
-> ---
->
-> ---
+> Como generar buenos promp para que la IA me ayude con un problema en concreto
 
 ### ¿Qué aprendí durante el desarrollo del proyecto?
 
-> ---
->
-> ---
+> Aprendi a tener un mejor desarrollo en el codigo, como no sobre cargar etiquetas, utilizar boostrap correctamente.
 
 ---
 
@@ -453,21 +438,15 @@ mi-recomendador/
 
 ### ¿Hubo algún momento en que la IA generó código que no comprendía?
 
-> ---
->
-> ---
+> Si me modificaba clases y codigo que estaba bien 
 
 ### ¿Qué hice cuando encontré ese código?
 
-> ---
->
-> ---
+> Leerlo y entenderlo si no le entendia le preguntaba por que uso eso 
 
 ### ¿Qué aprendí sobre utilizar IA como herramienta de programación?
 
-> ---
->
-> ---
+> Que podemos mejorar muy rapido y o quedarnos como jr y poer tener un codigo limpioy sin sobre carga
 
 ---
 
@@ -477,34 +456,11 @@ El proyecto fue desarrollado utilizando Git para registrar la evolución del pro
 
 ### Commits realizados
 
-1. `____________________________________________________________`
-2. `____________________________________________________________`
-3. `____________________________________________________________`
-4. `____________________________________________________________`
-5. `____________________________________________________________`
+1. `git commit -m"Initial commit"`
+2. `git commit -m"chore: Se crea estructura inicial del proyecto"`
+3. `git commit -m"feat:Primera parte. Se agregan 6 destinos al archivo  HTML."`
+4. `git commit -m"feat:Parte dos. Se agrega la parte de las imagenes y una pantalla de ver detalle"`
+5. `git commit -m"se actualizo y mejoro la estructura del HTML gracias a la IA"`
+6. `git commit -m"Se actualizo y mejoro la estructura del HTML gracias a la IA"`
 
-### Repositorio
 
-> ---
-
----
-
-# 📸 Captura del proyecto
-
-> Coloca aquí una captura de pantalla de tu sitio funcionando.
-
----
-
-# 🚀 Resultado final
-
-### ¿Qué logré construir?
-
-> ---
->
-> ---
-
-### ¿Qué mejoraría en una siguiente versión?
-
-> ---
->
-> ---
