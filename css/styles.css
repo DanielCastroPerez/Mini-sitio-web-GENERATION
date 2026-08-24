@@ -1,67 +1,55 @@
-/* * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-} */
-/* body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #ffffff;
-    color: red;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #263238;
+    background-color: #f4f1ea;
     line-height: 1.6;
-    padding-top: 0;
-    padding-bottom: 60px;
-} */
+}
+.navbar .btn-warning:hover {
+    color: #173f35;
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+header {
+    min-height: 390px;
+    color: #ffffff;
+    background-image: linear-gradient(rgba(23, 63, 53, 0.72), rgba(23, 63, 53, 0.72)), url('/asset/Fondo/fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.introduccion h2 {
+    font-weight: normal;
+}
+.introduccion p {
+    margin-top: 22px;
+    color: #f8f8f8;
+}
 
-/* .container-fluid{
-} */
+main.container {
+    max-width: 1200px;
+}
+.card-img-top {
+    height: 230px;
+    object-fit: cover;
+}
+.card-title {
+    color: #173f35;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.Star-Icons {
+    color: #d99618;
+}
 
-/* .titulo-p{
+.btn-primary:hover {
+    background-color: #173f35;
+}
+footer li {
+    margin-bottom: 8px;
+}
 
-} */
-/* .Introduccion{
-    background-image: url("/asset/Fondo/fondo.jpg");
-    color: white;
-    padding: 120px 20px;
-    margin-bottom: 60px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    text-align: center;
-} */
-
-/* .card-group , img{
-
-} */
-
-
-/* .card-body{
-
-} */
-
-/* .footer{
-
-} */
-
-/* .Secciones{
-
-} */
-
-/* .Recursos{
-
-} */
-
-/* .Redes{
-
-} */
-
-/* .carouselExampleInterval{
-
-} */
-
-
-/* .InformacionDetalle{
-
-} */
-
-
-/* .mapa_info{
-
-} */
