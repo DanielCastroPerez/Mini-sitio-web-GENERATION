@@ -1,39 +1,67 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-.container-fluid{
+} */
+/* body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: red;
+    line-height: 1.6;
+    padding-top: 0;
+    padding-bottom: 60px;
+} */
 
-}
-.titulo-p{
+/* .container-fluid{
+} */
 
-}
-.Introduccion{}
-.card-group , img{
+/* .titulo-p{
 
-}
-.card-body{
+} */
+/* .Introduccion{
+    background-image: url("/asset/Fondo/fondo.jpg");
+    color: white;
+    padding: 120px 20px;
+    margin-bottom: 60px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+} */
 
-}
-.footer{
+/* .card-group , img{
 
-}
-.Secciones{
+} */
 
-}
-.Recursos{
 
-}
-.Redes{
+/* .card-body{
 
-}
-.carouselExampleInterval{
+} */
 
-}
-.InformacionDetalle{
+/* .footer{
 
-}
-.mapa_info{
+} */
 
-}
+/* .Secciones{
+
+} */
+
+/* .Recursos{
+
+} */
+
+/* .Redes{
+
+} */
+
+/* .carouselExampleInterval{
+
+} */
+
+
+/* .InformacionDetalle{
+
+} */
+
+
+/* .mapa_info{
+
+} */

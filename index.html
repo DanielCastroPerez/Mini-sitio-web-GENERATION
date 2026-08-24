@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Un fin de semana en CDMX</title>
+
     <!--!Link de boostrap-->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -11,16 +12,25 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+
+    <!--!Link de iconos boostrap-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+
+    <!--!Link de css-->
+    <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
     <!--!Inicio de Navar-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
       <div class="container-fluid">
-        <!-- todo: style="background-color: black;"-->
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+          <!-- -->
           <img
             src="/docs/5.3/assets/brand/bootstrap-logo.svg"
-            alt="Logo"
+            alt="Logo Explora CDMX"
             width="30"
             height="24"
             class="d-inline-block align-text-top"
@@ -40,7 +50,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">INICIO</a>
             </li>
@@ -50,213 +60,257 @@
             <li class="nav-item">
               <a class="nav-link" href="#">GASTRONOMIA</a>
             </li>
-            <button type="button" class="btn btn-warning">
-              QUIERO VIAJAR YA
-            </button>
+            <li class="nav-item ms-lg-3">
+              <!-- *No sobre cargar un boton a funciona como uno-->
+              <a class="btn btn-warning fw-bold" href="#">QUIERO VIAJAR YA</a>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
     <!--!Fin de Navar-->
 
-    <!--!Inicio de Seccion Introduccion-->
-    <div class="container-fluid">
-      <section class="Introduccion" style="background-color:aqua"> <!-- todo :Aqui poner la imagen de fondompero es aqui o en css ?? y darle mas altura ese si en el css -->
-        <h1 class="titulo-p">Fin de semana en CDMX</h1>
-        <h4>Que hacer un fin de semana en CDMX</h4>
-        <p>
-          Los mejores lugares para visitar en la Ciudad de México incluyen el
-          Centro Histórico con el Zócalo, el Bosque de Chapultepec y su Castillo
-          de Chapultepec, el Museo Nacional de Antropología, el pintoresco
-          barrio de Coyoacán y los tradicionales canales de Xochimilco
-        </p>
-      </section>
-    </div>
+    <!--!Sección Introducción (Header)-->
+    <header class="container-fluid py-5 text-center introduccion">
+      <h1 class="titulo-p display-4 fw-bold">Fin de semana en CDMX</h1>
+      <h2 class="h4 text-muted">¿Qué hacer un fin de semana en CDMX?</h2>
+      <p class="col-lg-8 mx-auto lead">
+        Los mejores lugares para visitar en la Ciudad de México incluyen el
+        Centro Histórico con el Zócalo, el Bosque de Chapultepec y su Castillo,
+        el Museo Nacional de Antropología, el pintoresco barrio de Coyoacán y
+        los tradicionales canales de Xochimilco.
+      </p>
+    </header>
     <!--!Fin de Seccion Introduccion-->
 
     <!--!Inicio de card-->
     <!--Destinos PRINCIPALES-->
-    <div class="card-group">
-      <div class="card">
-        <img
-          src="/asset/Chapultepec/castillo.jpg"
-          class="card-img-top"
-          alt="..."
-        /><!--Todo : Hacerlo carruzel ??? se podra jaja yo creo que si amiko todo se puede pero ya tenemos la pantalla de mas detalle con carusel jeje-->
-        <div class="card-body">
-          <h5 class="card-title">Castillo de Chapultepec</h5>
-          <p class="card-text">
-            Imagina un santuario donde la historia imperial y la naturaleza viva
-            se fusionan en el corazón de una de las metrópolis más vibrantes del
-            mundo. El Bosque de Chapultepec no es solo el pulmón verde de la
-            Ciudad de México; es un portal en el tiempo.
-          </p>
-          <div class="Star-Icons">
-            <div class="container">
-              <i class="bi bi-star-fill" style="color: gold"></i>
-              <p>4.8</p>
-              <i class="bi bi-star-fill"></i>
+    <main class="container my-4">
+      <div class="card-group mb-5">
+        <div class="card">
+          <img
+            src="/asset/Chapultepec/castillo.jpg"
+            class="card-img-top"
+            alt="Castillo de Chapultepec"
+          />
+          <div class="card-body d-flex flex-column">
+            <h3 class="card-title h5">Castillo de Chapultepec</h3>
+            <p class="card-text flex-grow-1">
+              Imagina un santuario donde la historia imperial y la naturaleza
+              viva se fusionan en el corazón de una de las metrópolis más
+              vibrantes del mundo. El Bosque de Chapultepec no es solo el pulmón
+              verde de la Ciudad de México; es un portal en el tiempo.
+            </p>
+            <div class="Star-Icons mb-3 d-flex align-items-center gap-2">
+              <i class="bi bi-star-fill text-warning"></i>
+              <span class="fw-bold">4.8</span>
             </div>
+            <a
+              href="Detalles-Destinos/Chapultepec.html"
+              class="btn btn-primary w-100"
+            >
+              Ver Detalles
+            </a>
           </div>
-          <a href="Detalles-Destinos/Chapultepec.html"><button type="button" class="btn btn-primary btn-lg">
-            Ver Detalles
-          </button></a>
-          <!--Botone ver detalle-->
+        </div>
+
+        <div class="card">
+          <img
+            src="/asset/MuseoAntropología/mueso3.jpg"
+            class="card-img-top"
+            alt="Museo Nacional de Antropología"
+          />
+          <div class="card-body d-flex flex-column">
+            <h3 class="card-title h5">Museo Nacional de Antropología</h3>
+            <p class="card-text flex-grow-1">
+              Cruzar el umbral del Museo Nacional de Antropología es asomarse
+              directamente al alma de México y al asombro de la historia humana.
+              Custodiado por un colosal paraguas de hormigón del que cae una
+              cascada eterna, este espacio es mucho más que un museo; es un
+              viaje épico a través del tiempo.
+            </p>
+            <div class="Star-Icons mb-3 d-flex align-items-center gap-2">
+              <i class="bi bi-star-fill text-warning"></i>
+              <span class="fw-bold">4.8</span>
+            </div>
+            <a href="Detalles-Destinos/modifi" class="btn btn-primary w-100">
+              Ver Detalles
+            </a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="/asset/BellasArtes/bellas1.jpg"
+            class="card-img-top"
+            alt="Palacio de Bellas Artes"
+          />
+          <div class="card-body d-flex flex-column">
+            <h3 class="card-title h5">Palacio de Bellas Artes</h3>
+            <p class="card-text flex-grow-1">
+              Contemplar el Palacio de Bellas Artes por primera vez es una
+              experiencia que acelera el corazón. Esta catedral del arte, con su
+              fachada de mármol blanco de Carrara y sus cúpulas que brillan con
+              los colores del fuego, se levanta majestuosa en el corazón de la
+              ciudad como un poema arquitectónico
+            </p>
+            <div class="Star-Icons mb-3 d-flex align-items-center gap-2">
+              <i class="bi bi-star-fill text-warning"></i>
+              <span class="fw-bold">4.8</span>
+            </div>
+            <a href="Detalles-Destinos/modifi" class="btn btn-primary w-100">
+              Ver Detalles
+            </a>
+          </div>
         </div>
       </div>
 
-      <div class="card">
-        <img src="/asset/MuseoAntropología/mueso3.jpg" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Museo Nacional de Antropología</h5>
-          <p class="card-text">
-            Cruzar el umbral del Museo Nacional de Antropología es asomarse
-            directamente al alma de México y al asombro de la historia humana.
-            Custodiado por un colosal paraguas de hormigón del que cae una
-            cascada eterna, este espacio es mucho más que un museo; es un viaje
-            épico a través del tiempo.
-          </p>
-          <div class="Star-Icons">
-            <div class="container">
-              <i class="bi bi-star-fill" style="color: gold"></i>
-              <p>4.8</p>
-              <i class="bi bi-star-fill"></i>
-            </div>
-          </div>
-          <a href="Detalles-Destinos/modifi"><button type="button" class="btn btn-primary btn-lg">
-            Ver Detalles
-          </button></a>
-          <!--Botone ver detalle-->
-        </div>
-      </div>
+      <!-- Sección Lugares de Naturaleza -->
+      <h2 class="titulo-p mb-4 text-center">
+        ¿Te gusta más la naturaleza? Ve estos lugares
+      </h2>
 
-      <div class="card">
-        <img src="/asset/BellasArtes/bellas1.jpg" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Palacio de Bellas Artes</h5>
-          <p class="card-text">
-            Contemplar el Palacio de Bellas Artes por primera vez es una
-            experiencia que acelera el corazón. Esta catedral del arte, con su
-            fachada de mármol blanco de Carrara y sus cúpulas que brillan con
-            los colores del fuego, se levanta majestuosa en el corazón de la
-            ciudad como un poema arquitectónico
-          </p>
-          <div class="Star-Icons">
-            <div class="container">
-              <i class="bi bi-star-fill" style="color: gold"></i>
-              <p>4.8</p>
-              <i class="bi bi-star-fill"></i>
+      <div class="card-group">
+        <div class="card">
+          <img
+            src="/asset/Coyoacan/coyo2.jpg"
+            class="card-img-top"
+            alt="Callejón pintoresco en Coyoacán"
+          />
+          <div class="card-body d-flex flex-column">
+            <h3 class="card-title h5">Coyoacán</h3>
+            <p class="card-text flex-grow-1">
+              Caminar por Coyoacán es entrar a un oasis donde el tiempo parece
+              haberse detenido en el México más romántico y bohemio. Sus
+              tranquilas calles empedradas, flanqueadas por casonas coloniales
+              de colores vibrantes
+            </p>
+            <div class="Star-Icons mb-3 d-flex align-items-center gap-2">
+              <i class="bi bi-star-fill text-warning"></i>
+              <span class="fw-bold">4.8</span>
             </div>
+            <a href="Detalles-Destinos/modifi" class="btn btn-primary w-100">
+              Ver Detalles
+            </a>
           </div>
-          <a href="Detalles-Destinos/modifi"><button type="button" class="btn btn-primary btn-lg">
-            Ver Detalles
-          </button></a>
-          <!--Botone ver detalle-->
         </div>
-      </div>
-    </div>
 
-    <h1 class="titulo-p">Te gusta mas la natura ? ve estos lugares</h1>
+        <div class="card">
+          <img
+            src="/asset/Xochimilco/xochi1.jpg"
+            class="card-img-top"
+            alt="Trajineras en los canales de Xochimilco"
+          />
+          <div class="card-body d-flex flex-column">
+            <h3 class="card-title h5">Canales de Xochimilco</h3>
+            <p class="card-text flex-grow-1">
+              Xochimilco es una fiesta flotante, una explosión de color y la
+              última ventana viva al pasado lacustre de los aztecas. Subir a una
+              de sus legendarias trajineras es comenzar una travesía inolvidable
+              a través de canales antiguos y jardines flotantes
+            </p>
+            <div class="Star-Icons mb-3 d-flex align-items-center gap-2">
+              <i class="bi bi-star-fill text-warning"></i>
+              <span class="fw-bold">4.8</span>
+            </div>
+            <a href="Detalles-Destinos/modifi" class="btn btn-primary w-100">
+              Ver Detalles
+            </a>
+          </div>
+        </div>
 
-    <div class="card-group">
-      <div class="card">
-        <img src="/asset/Coyoacan/coyo2.jpg" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Coyoacán</h5>
-          <p class="card-text">
-            Caminar por Coyoacán es entrar a un oasis donde el tiempo parece haberse detenido en el México más romántico y bohemio. Sus tranquilas calles empedradas, flanqueadas por casonas coloniales de colores vibrantes
-          </p>
-          <div class="Star-Icons">
-            <div class="container">
-              <i class="bi bi-star-fill" style="color: gold"></i>
-              <p>4.8</p>
-              <i class="bi bi-star-fill"></i>
+        <div class="card">
+          <img
+            src="/asset/Parque-México/par1.jpg"
+            class="card-img-top"
+            alt="Parque México en la Colonia Condesa"
+          />
+          <div class="card-body d-flex flex-column">
+            <h3 class="card-title h5">Parque México</h3>
+            <p class="card-text flex-grow-1">
+              This is a wider card with supporting text below as a natural
+              lead-in to additional content. This card has even longer content
+              than the first to show that equal height action.Ubicado en el
+              corazón de la vibrante colonia Condesa, el Parque México es el
+              reflejo perfecto del estilo de vida cosmopolita y relajado de la
+              ciudad. Este oasis urbano destaca por su elegante arquitectura.
+            </p>
+            <div class="Star-Icons mb-3 d-flex align-items-center gap-2">
+              <i class="bi bi-star-fill text-warning"></i>
+              <span class="fw-bold">4.8</span>
             </div>
+            <a href="Detalles-Destinos/modifi" class="btn btn-primary w-100">
+              Ver Detalles
+            </a>
           </div>
-          <a href="Detalles-Destinos/modifi"><button type="button" class="btn btn-primary btn-lg">
-            Ver Detalles
-          </button></a>
         </div>
       </div>
-      <div class="card">
-        <img src="/asset/Xochimilco/xochi1.jpg" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Canales de Xochimilco</h5>
-          <p class="card-text">
-            Xochimilco es una fiesta flotante, una explosión de color y la última ventana viva al pasado lacustre de los aztecas. Subir a una de sus legendarias trajineras es comenzar una travesía inolvidable a través de canales antiguos y jardines flotantes
-          </p>
-          <div class="Star-Icons">
-            <div class="container">
-              <i class="bi bi-star-fill" style="color: gold"></i>
-              <p>4.8</p>
-              <i class="bi bi-star-fill"></i>
-            </div>
-          </div>
-          <a href="Detalles-Destinos/modifi"><button type="button" class="btn btn-primary btn-lg">
-            Ver Detalles
-          </button></a>
-        </div>
-      </div>
-      <div class="card">
-        <img src="/asset/Parque-México/par1.jpg" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Parque México</h5>
-          <p class="card-text">
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This card has even longer content than the
-            first to show that equal height action.Ubicado en el corazón de la vibrante colonia Condesa, el Parque México es el reflejo perfecto del estilo de vida cosmopolita y relajado de la ciudad. Este oasis urbano destaca por su elegante arquitectura.
-          </p>
-          <div class="Star-Icons">
-            <div class="container">
-              <i class="bi bi-star-fill" style="color: gold"></i>
-              <p>4.8</p>
-              <i class="bi bi-star-fill"></i>
-            </div>
-          </div>
-          <a href="Detalles-Destinos/modifi"><button type="button" class="btn btn-primary btn-lg">
-            Ver Detalles
-          </button></a>
-        </div>
-      </div>
-    </div>
+    </main>
     <!--!Fin de card-->
 
     <!--!footer-->
-    <footer>
-      <!--SECCIION-->
-      <section class="Secciones">
-        <h1>Secciones</h1>
-        <li>
-          <ul>Inicio</ul>
-          <ul>Destinos</ul>
-          <ul>Eventos</ul>
-          <ul>Gastronimia</ul>
-          <ul>Nosotros</ul>
-        </li>
-      </section>
-      <!--Recursos CDMX-->
-      <section class="Recursos">
-        <h1>Recursos CDMX</h1>
-        <li>
-          <ul>Mapas</ul>
-          <ul>Transporte</ul>
-          <ul>Clima</ul>
-          <ul>Seguridad</ul>
-          <ul>Cultura CDMX</ul>
-        </li>
-      </section>
-      <!--Nuestras redes-->
-      <section class="Redes">
-        <h1>Nuestras redes</h1>
-        <li>
-          <ul><a href=""><i class="bi bi-facebook"></i></a></ul>
-          <ul><a href=""><i class="bi bi-instagram"></i></a></ul>
-          <ul><a href=""><i class="bi bi-youtube"></i></a></ul>
-          <ul>Gastronimia</ul>
-          <ul>Nosotros</ul>
-        </li>
-      </section>
-
+    <footer class="bg-dark text-warning py-5 mt-5">
+      <!--boostrap ->Background ->bg-dark color de fondo | boostrap ->Colors ->text-warning solo cambia a las etiquetas fuera del li | boostrap ->Spacing->py-  -->
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <h4 class="h5">Secciones</h4>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-light text-decoration-none">Inicio</a>
+              </li>
+              <li>
+                <a href="#" class="text-light text-decoration-none">Destinos</a>
+              </li>
+              <li>
+                <a href="#" class="text-light text-decoration-none">Eventos</a>
+              </li>
+              <li>
+                <a href="#" class="text-light text-decoration-none"
+                  >Gastronomía</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-light text-decoration-none">Nosotros</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h4 class="h5">Recursos CDMX</h4>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-light text-decoration-none">Mapas</a>
+              </li>
+              <li>
+                <a href="#" class="text-light text-decoration-none"
+                  >Transporte</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-light text-decoration-none">Clima</a>
+              </li>
+              <li>
+                <a href="#" class="text-light text-decoration-none"
+                  >Seguridad</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-light text-decoration-none"
+                  >Cultura CDMX</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h4 class="h5">Nuestras Redes</h4>
+            <div class="d-flex gap-3 fs-4">
+              <a href="#" class="text-light"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="text-light"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="text-light"><i class="bi bi-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <!--!Link de boostrap-->
@@ -265,10 +319,5 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
-    <!--!Link de iconos boostrap-->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
-    />
   </body>
 </html>

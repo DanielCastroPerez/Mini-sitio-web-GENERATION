@@ -13,13 +13,13 @@
     />
   </head>
   <!--!Inicio de Navar-->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
     <div class="container-fluid">
-      <!-- todo: style="background-color: black;"-->
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <!-- -->
         <img
           src="/docs/5.3/assets/brand/bootstrap-logo.svg"
-          alt="Logo"
+          alt="Logo Explora CDMX"
           width="30"
           height="24"
           class="d-inline-block align-text-top"
@@ -39,7 +39,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">INICIO</a>
           </li>
@@ -49,9 +49,10 @@
           <li class="nav-item">
             <a class="nav-link" href="#">GASTRONOMIA</a>
           </li>
-          <button type="button" class="btn btn-warning">
-            QUIERO VIAJAR YA
-          </button>
+          <li class="nav-item ms-lg-3">
+            <!-- *No sobre cargar un boton a funciona como uno-->
+            <a class="btn btn-warning fw-bold" href="#">QUIERO VIAJAR YA</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -66,24 +67,27 @@
   >
     <div class="carousel-inner">
       <div class="carousel-item active" data-bs-interval="10000">
-        <img src="/asset/Chapultepec/chapu1.jpg" class="img-fluid" alt="..." />
+        <img
+          src="/asset/Chapultepec/chapu1.jpg"
+          class="d-block w-100"
+          style="max-height: 400px; object-fit: cover"
+          alt="Chapultepec 1"
+        />
       </div>
       <div class="carousel-item" data-bs-interval="2000">
         <img
           src="/asset/Chapultepec/chapu2.jpg"
           class="d-block w-100"
-          alt="..."
-          height="300px"
-          width="100"
+          style="max-height: 400px; object-fit: cover"
+          alt="Chapultepec 2"
         />
       </div>
       <div class="carousel-item">
         <img
           src="/asset/Chapultepec/chap3.jpg"
           class="d-block w-100"
-          alt="..."
-          height="300px"
-          width="100"
+          style="max-height: 400px; object-fit: cover"
+          alt="Chapultepec 3"
         />
       </div>
     </div>
@@ -94,7 +98,7 @@
       data-bs-slide="prev"
     >
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
+      <span class="visually-hidden">Anterior</span>
     </button>
     <button
       class="carousel-control-next"
@@ -103,127 +107,151 @@
       data-bs-slide="next"
     >
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
+      <span class="visually-hidden">Siguiente</span>
     </button>
   </div>
   <!--! Fin: Crrucel-->
 
   <!--! INFORMACION-->
-  <section id="InformacionDetalle">
-    <h1>Bosque de Chapultepec</h1>
-    <p>
-      Puedes caminar bajo la sombra de ahuehuetes centenarios, remar en un lago
-      sereno, y levantar la vista para descubrir el único castillo real del
-      continente americano coronando la colina. Ya sea que busques el misticismo
-      de los tesoros prehispánicos en el mundialmente famoso Museo de
-      Antropología, la paz de un jardín secreto, o la energía de su vida
-      cultural, Chapultepec te envuelve en una atmósfera mágica de la que es
-      imposible no enamorarse.
-    </p>
-    <h4>Historia y arquitectura</h4>
-    <p>
-      Refugio prehispánico y escenario de batallas históricas. Combina vestigios
-      arqueológicos, monumentos neoclásicos y el imponente Castillo de
-      Chapultepec, único palacio real de América, que fusiona estilos barroco y
-      neoclásico con jardines elevados.
-    </p>
-  </section>
+  <div class="container my-5">
+    <div class="row g-4">
+      <!-- Columna Izquierda: Información Detallada -->
+      <main class="col-lg-8">
+        <h1 class="display-5 fw-bold mb-3">Bosque de Chapultepec</h1>
+        <p class="lead">
+          Puedes caminar bajo la sombra de ahuehuetes centenarios, remar en un
+          lago sereno, y levantar la vista para descubrir el único castillo real
+          del continente americano coronando la colina.
+        </p>
+        <hr class="my-4" />
+        <h3 class="h4 fw-bold">Historia y Arquitectura</h3>
+        <p>
+          Refugio prehispánico y escenario de batallas históricas. Combina
+          vestigios arqueológicos, monumentos neoclásicos y el imponente
+          Castillo de Chapultepec, único palacio real de América, que fusiona
+          estilos barroco y neoclásico con jardines elevados.
+        </p>
+      </main>
 
-  <!--!Mapa + informacion-->
-  <section  class="mapa_info">
-    <div class="card" style="width: 18rem">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.836212412415!2d-99.18945579999999!3d19.419481500000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff574549573f%3A0x42e2e5c1a219c3af!2sBosque%20de%20Chapultepec!5e0!3m2!1ses!2smx!4v1787444100987!5m2!1ses!2smx"
-        width="286"
-        height="270"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="strict-origin-when-cross-origin"
-      ></iframe>
-      <div class="card-body">
-        <!--!tabla-->
-        <table class="table">
-          <thead>
-            <tr>
-              <th scope="col">Dia</th>
-              <th scope="col">Horario</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">sábado</th>
-              <td>5 a.m.–6 p.m.</td>
-            </tr>
-            <tr>
-              <th scope="row">domingo</th>
-              <td>5 a.m.–6 p.m.</td>
-            </tr>
-            <tr>
-              <th scope="row">lunes</th>
-              <td>Cerrado</td>
-            </tr>
-            <tr>
-              <th scope="row">martes</th>
-              <td>5 a.m.–6 p.m.</td>
-            </tr>
-            <tr>
-              <th scope="row">miércoles</th>
-              <td>5 a.m.–6 p.m.</td>
-            </tr>
-            <tr>
-              <th scope="row">jueves</th>
-              <td>5 a.m.–6 p.m.</td>
-            </tr>
-            <tr>
-              <th scope="row">viernes</th>
-              <td>5 a.m.–6 p.m.</td>
-            </tr>
-          </tbody>
-        </table>
-        <!--!Fin tabla-->
+      <!-- Columna Derecha: Tarjeta con Mapa y Horarios -->
+      <aside class="col-lg-4">
+        <div class="card shadow-sm border-0">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.836212412415!2d-99.18945579999999!3d19.419481500000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff574549573f%3A0x42e2e5c1a219c3af!2sBosque%20de%20Chapultepec!5e0!3m2!1ses!2smx!4v1787444100987!5m2!1ses!2smx"
+            class="card-img-top"
+            height="220"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+          >
+          </iframe>
+          <div class="card-body">
+            <h5 class="card-title h6 fw-bold mb-3">Horarios de Visita</h5>
+            <table class="table table-sm table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">Día</th>
+                  <th scope="col">Horario</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>Sábado</th>
+                  <td>5 a.m. – 6 p.m.</td>
+                </tr>
+                <tr>
+                  <th>Domingo</th>
+                  <td>5 a.m. – 6 p.m.</td>
+                </tr>
+                <tr>
+                  <th>Lunes</th>
+                  <td class="text-danger fw-bold">Cerrado</td>
+                </tr>
+                <tr>
+                  <th>Martes</th>
+                  <td>5 a.m. – 6 p.m.</td>
+                </tr>
+                <tr>
+                  <th>Miércoles</th>
+                  <td>5 a.m. – 6 p.m.</td>
+                </tr>
+                <tr>
+                  <th>Jueves</th>
+                  <td>5 a.m. – 6 p.m.</td>
+                </tr>
+                <tr>
+                  <th>Viernes</th>
+                  <td>5 a.m. – 6 p.m.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <!--!footer-->
+  <footer class="bg-dark text-warning py-5 mt-5">
+    <!--boostrap ->Background ->bg-dark color de fondo | boostrap ->Colors ->text-warning solo cambia a las etiquetas fuera del li | boostrap ->Spacing->py-  -->
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <h4 class="h5">Secciones</h4>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#" class="text-light text-decoration-none">Inicio</a>
+            </li>
+            <li>
+              <a href="#" class="text-light text-decoration-none">Destinos</a>
+            </li>
+            <li>
+              <a href="#" class="text-light text-decoration-none">Eventos</a>
+            </li>
+            <li>
+              <a href="#" class="text-light text-decoration-none"
+                >Gastronomía</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-light text-decoration-none">Nosotros</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h4 class="h5">Recursos CDMX</h4>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#" class="text-light text-decoration-none">Mapas</a>
+            </li>
+            <li>
+              <a href="#" class="text-light text-decoration-none">Transporte</a>
+            </li>
+            <li>
+              <a href="#" class="text-light text-decoration-none">Clima</a>
+            </li>
+            <li>
+              <a href="#" class="text-light text-decoration-none">Seguridad</a>
+            </li>
+            <li>
+              <a href="#" class="text-light text-decoration-none"
+                >Cultura CDMX</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h4 class="h5">Nuestras Redes</h4>
+          <div class="d-flex gap-3 fs-4">
+            <a href="#" class="text-light"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-light"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-light"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
       </div>
     </div>
-  </section>
-  <!--! Mapa + informacion-->
-
-<!--!footer-->
-    <footer>
-      <!--SECCIION-->
-      <section class="Secciones">
-        <h1>Secciones</h1>
-        <li>
-          <ul>Inicio</ul>
-          <ul>Destinos</ul>
-          <ul>Eventos</ul>
-          <ul>Gastronimia</ul>
-          <ul>Nosotros</ul>
-        </li>
-      </section>
-      <!--Recursos CDMX-->
-      <section class="Recursos">
-        <h1>Recursos CDMX</h1>
-        <li>
-          <ul>Mapas</ul>
-          <ul>Transporte</ul>
-          <ul>Clima</ul>
-          <ul>Seguridad</ul>
-          <ul>Cultura CDMX</ul>
-        </li>
-      </section>
-      <!--Nuestras redes-->
-      <section class="Redes">
-        <h1>Nuestras redes</h1>
-        <li>
-          <ul><a href=""><i class="bi bi-facebook"></i></a></ul>
-          <ul><a href=""><i class="bi bi-instagram"></i></a></ul>
-          <ul><a href=""><i class="bi bi-youtube"></i></a></ul>
-          <ul>Gastronimia</ul>
-          <ul>Nosotros</ul>
-        </li>
-      </section>
-
-    </footer>
+  </footer>
 
   <!--!Link de boostrap-->
   <script
