@@ -95,28 +95,24 @@ Formato de respuesta que prefiero:
 
 ### ¿Qué respondió la IA?
 
-> Actúa como un desarrollador senior experto en HTML, CSS, Bootstrap y JavaScript (nivel principiante), con amplia experiencia en la enseñanza y revisión de código para estudiantes de bootcamps.
+>¡Totalmente listo! Como desarrollador senior y mentor, será un gusto acompañarte en este proceso y revisar tu código.
 
-Quiero que revises el código que te voy a proporcionar y me des una retroalimentación completa y detallada. Tu respuesta debe incluir lo siguiente:
+Aprender la base sólida de **HTML, CSS, Bootstrap y JavaScript** es el paso más importante para construir aplicaciones web funcionales y profesionales. Tu nivel actual es excelente para empezar a escribir código limpio y semántico desde el primer día.
 
-1. **Detección de errores**: Señala cualquier error de sintaxis, lógica, buenas prácticas o malas prácticas que encuentres en mi código.
-2. **Sugerencias de mejora**: Propón mejoras concretas y aplicables, mostrando ejemplos de código corregido o mejorado cuando sea necesario.
-3. **Explicación del porqué**: Explica claramente el motivo de cada corrección o sugerencia, de manera que pueda entender el razonamiento detrás de ella y así aprender a aplicarla en futuros proyectos.
-4. **Consejos adicionales**: Agrega recomendaciones útiles para mi nivel actual (HTML, CSS, Bootstrap y fundamentos de JavaScript como variables y tipos de datos) que me ayuden a avanzar rápidamente.
+### Cómo trabajaremos en las revisiones
 
-### Contexto
+Para aprovechar al máximo cada retroalimentación, organizaré la revisión en cuatro pilares:
 
-Actualmente estoy estudiando en un bootcamp y he aprendido HTML, CSS, Bootstrap y JavaScript, aunque por ahora solo manejo variables y tipos de datos en JavaScript (por ejemplo, string, number, boolean, null, undefined). Aún no he profundizado en estructuras de control, funciones ni manipulación del DOM.
+1. **Detección de errores y malas prácticas**: Identificaremos fallas de sintaxis, errores semánticos en HTML, uso inadecuado de clases de Bootstrap o redundancias en CSS y JavaScript.
+2. **Sugerencias y código corregido**: Verás bloques de código comparativos (*Antes vs. Después*) para que visualices la mejora de inmediato.
+3. **Explicación técnica sencilla**: Entenderás el *porqué* detrás de cada estándar (accesibilidad, especificidad en CSS, rendimiento y legibilidad).
+4. **Tips para tu nivel**: Consejos prácticos alineados con lo que estás viendo en tu bootcamp (estrucutra de archivos, nombrado de variables con `const`/`let`, tipos de datos primitivos y sintaxis limpia).
 
-Cuando te comparta mi código, quiero que actúes como un mentor que me guía para crecer como programador, detectando mis errores, explicándome las razones de cada uno y mostrándome el camino para mejorar mis habilidades de forma progresiva.
+---
 
-Formato de respuesta que prefiero:
+### ¿Listo para enviar tu código?
 
-- Respuestas claras, organizadas por secciones.
-- Explicaciones sencillas y con ejemplos prácticos.
-- Un tono amigable y motivador, pero técnico y preciso.
-
-¿Estás listo para revisar mi código?
+Comparte tu código (puedes pegarlo directamente aquí en HTML, CSS, clases de Bootstrap o JavaScript) y dime si forma parte de algún proyecto o ejercicio en particular. ¡Iremos paso a paso!
 
 ### ¿Qué parte utilizaré?
 
