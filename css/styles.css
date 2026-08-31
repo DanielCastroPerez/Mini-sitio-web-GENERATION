@@ -6,7 +6,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: #263238;
-    background-color: #f4f1ea;
+    background-color:#75B1A9;  /*#1995AD*/
     line-height: 1.6;
 }
 .navbar .btn-warning:hover {
@@ -53,3 +53,9 @@ footer li {
     margin-bottom: 8px;
 }
 
+.chapultepec-hero{
+    background-color: #D9B44A;
+}
+.chapultepec-info{
+    background-color: #ACD0C0;
+}
