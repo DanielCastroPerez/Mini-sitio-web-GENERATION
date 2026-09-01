@@ -17,7 +17,7 @@ body {
 header {
     min-height: 390px;
     color: #ffffff;
-    background-image: linear-gradient(rgba(23, 63, 53, 0.72), rgba(23, 63, 53, 0.72)), url('/asset/Fondo/fondo.jpg');
+    background-image: linear-gradient(rgba(23, 63, 53, 0.72), rgba(23, 63, 53, 0.72)), url('../asset/Fondo/fondo.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
