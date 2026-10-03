@@ -1,0 +1,158 @@
+/* ==========================================
+   GASTRONOMÍA MEXICANA - ESTILOS GENERALES
+   ========================================== */
+
+:root {
+  --color-chile: #C0392B;
+  --color-chile-hover: #A93226;
+  --color-barro: #8D6E63;
+  --color-oro: #D4AC0D;
+  --color-maiz: #F9EBEA;
+  --color-oscuro: #1A1A1A;
+  --color-texto: #2C3E50;
+  --fuente-titulo: 'Georgia', 'Times New Roman', serif;
+}
+
+body {
+  background-color: #FAF8F5;
+  color: var(--color-texto);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.7;
+}
+
+/* ==========================================
+   SECCIÓN HERO / BIENVENIDA
+   ========================================== */
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem;
+}
+
+main > section:first-of-type {
+  background: #FFFFFF;
+  border-radius: 16px;
+  padding: 3rem 2.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  border-top: 5px solid var(--color-chile);
+  margin-bottom: 3rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Marca de agua decorativa sutil en la tarjeta */
+main > section:first-of-type::after {
+  content: "🇲🇽";
+  position: absolute;
+  right: -20px;
+  bottom: -30px;
+  font-size: 10rem;
+  opacity: 0.04;
+  pointer-events: none;
+}
+
+/* Título principal */
+#titulo-gastronomia {
+  font-family: var(--fuente-titulo);
+  color: var(--color-chile);
+  font-weight: 800;
+  font-size: clamp(2.2rem, 5vw, 3.2rem);
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.5px;
+}
+
+/* Subtítulos destacados (.lead) */
+main p.lead {
+  color: var(--color-barro);
+  font-weight: 700;
+  font-size: 1.35rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+main p.lead:last-of-type {
+  color: var(--color-chile);
+  font-size: 1.45rem;
+}
+
+/* Parrafos de cuerpo */
+main p {
+  font-size: 1.1rem;
+  color: #4A4A4A;
+  margin-bottom: 1.2rem;
+}
+
+/* ==========================================
+   SECCIÓN SABORES (CALL TO ACTION)
+   ========================================== */
+
+#sabores {
+  background: linear-gradient(135deg, #1A1A1A 0%, #2D1414 100%);
+  color: #FFFFFF;
+  border-radius: 16px;
+  padding: 3.5rem 2rem;
+  text-align: center;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+
+#titulo-sabores {
+  font-family: var(--fuente-titulo);
+  color: var(--color-oro);
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+#sabores p {
+  color: #E0E0E0;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/* Botón principal de exploración */
+#sabores .btn-outline-danger {
+  color: #FFFFFF;
+  background-color: var(--color-chile);
+  border: 2px solid var(--color-chile);
+  padding: 0.8rem 2.2rem;
+  font-size: 1.15rem;
+  font-weight: 700;
+  border-radius: 50px;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(192, 57, 43, 0.4);
+}
+
+#sabores .btn-outline-danger:hover {
+  background-color: var(--color-chile-hover);
+  border-color: var(--color-chile-hover);
+  color: #FFFFFF;
+  transform: translateY(-3px);
+  box-shadow: 0 7px 20px rgba(192, 57, 43, 0.6);
+}
+.Gatito{
+    width: 50%;
+    height: auto;
+    display: block;   
+    margin: 0 auto; 
+}
+
+/* ==========================================
+   AJUSTES RESPONSIVOS
+   ========================================== */
+
+@media (max-width: 576px) {
+  main {
+    padding: 1.2rem 0.8rem;
+  }
+  
+  main > section:first-of-type {
+    padding: 2rem 1.2rem;
+  }
+  
+  #sabores {
+    padding: 2.5rem 1.2rem;
+  }
+}
