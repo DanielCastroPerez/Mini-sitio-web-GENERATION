@@ -1,6 +1,5 @@
-/* ==========================================
-   GASTRONOMÍA MEXICANA - ESTILOS GENERALES
-   ========================================== */
+/* ################ GASTRONOMÍA MEXICANA - ESTILOS GENERALES ############################
+    */
 
 :root {
   --color-chile: #C0392B;
@@ -20,9 +19,8 @@ body {
   line-height: 1.7;
 }
 
-/* ==========================================
-   SECCIÓN HERO / BIENVENIDA
-   ========================================== */
+/* ################ BIENVENIDA ############################
+    */
 
 main {
   max-width: 1000px;
@@ -62,7 +60,7 @@ main > section:first-of-type::after {
   letter-spacing: -0.5px;
 }
 
-/* Subtítulos destacados (.lead) */
+/*################ Subtítulos destacados ################*/
 main p.lead {
   color: var(--color-barro);
   font-weight: 700;
@@ -83,9 +81,8 @@ main p {
   margin-bottom: 1.2rem;
 }
 
-/* ==========================================
-   SECCIÓN SABORES (CALL TO ACTION)
-   ========================================== */
+/* ################## SECCIÓN SABORES ##########################
+    */
 
 #sabores {
   background: linear-gradient(135deg, #1A1A1A 0%, #2D1414 100%);
@@ -111,7 +108,7 @@ main p {
   margin-bottom: 2rem;
 }
 
-/* Botón principal de exploración */
+/* ################## Botón principal de exploración  ################## */
 #sabores .btn-outline-danger {
   color: #FFFFFF;
   background-color: var(--color-chile);
@@ -139,9 +136,8 @@ main p {
     margin: 0 auto; 
 }
 
-/* ==========================================
-   AJUSTES RESPONSIVOS
-   ========================================== */
+/* ################# AJUSTES RESPONSIVOS ###########################
+    */
 
 @media (max-width: 576px) {
   main {
