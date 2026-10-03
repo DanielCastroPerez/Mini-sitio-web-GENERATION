@@ -27,7 +27,7 @@ const navbar =
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="/BienvenidaComida.html">GASTRONOMIA MEXICANA</a>
+              <a class="nav-link" href="BienvenidaComida.html">GASTRONOMIA MEXICANA</a>
             </li>
             <li class="nav-item ms-lg-3">
               <!-- *No sobre cargar un boton a funciona como uno-->
